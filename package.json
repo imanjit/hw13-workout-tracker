@@ -1,0 +1,24 @@
+{
+  "name": "hw13-workout-tracker",
+  "version": "1.0.0",
+  "description": "A fitness application allowing users to view, track, and update their workouts",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imanjit/hw13-workout-tracker.git"
+  },
+  "author": "https://github.com/imanjit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imanjit/hw13-workout-tracker/issues"
+  },
+  "homepage": "https://github.com/imanjit/hw13-workout-tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0"
+  }
+}
