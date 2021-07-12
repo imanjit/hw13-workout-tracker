@@ -10,12 +10,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json);
 app.use(express.static("public"));
 
-let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
-mongoose.connect(MONGODB_URI,{  
-    useNewUrlParser:true,
-    useUnifiedTopology: true,
-    useCreateIndex: true
-})
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+});
+
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 app.listen(PORT, () => {
     console.log("App listening on Port: " + PORT);
