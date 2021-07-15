@@ -35,8 +35,4 @@ module.exports = (app) => {
             res.json(err);
           });
     });
-
-    app.get("*", (req, res) => {
-        res.redirect("/");
-    });
 };
